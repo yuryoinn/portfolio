@@ -1,7 +1,7 @@
 const remainTime = document.querySelector('#remain-time');
 
 function dDay() {
-    const openTime = new Date("2022-12-14");
+    const openTime = new Date("2022-12-07");
     const todayTime = new Date();
 
     const dday = openTime - todayTime;

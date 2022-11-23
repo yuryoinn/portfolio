@@ -33,7 +33,7 @@ ul {
 }
 
 .main h1 {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-size: 50px;
     line-height: 1.2em;
 }
@@ -42,12 +42,39 @@ ul {
     font-size: 60px;
 }
 
-#d-day {
+#open {
     color: #EA5600;
     margin-bottom: 25px;
+    font-size: 30px;
+}
+
+#d-day {
+    color: #EA5600;
+    margin-bottom: 35px;
     font-size: 50px;
 }
 
 #remain-time {
     font-size: 40px;
+}
+
+.slogan {
+    padding-top: 800px;
+}
+
+.slogan h2 {
+    font-size: 50px;
+    color: #EA5600;
+    text-align: center;
+    animation: srr 1s linear infinite alternate;
+    transition: all 1s;
+}
+
+@keyframes srr {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
