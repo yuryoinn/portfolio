@@ -1,0 +1,122 @@
+.project {
+    width: 100%;
+    Background-color : #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.project-inner {
+    width: 1400px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.project-container {
+    width: 100%;
+    border: 1px solid red;
+    padding: 150px 0;
+}
+
+.project-content {
+    width: 1000px;
+    border: 2px solid #EA5600;
+    border-radius: 30px;
+    padding: 40px;
+    position: relative;
+}
+
+.content-titlebox {
+    width: 280px;
+    height: 50px;
+    background-color: #ea5600;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px 5px;
+    position: absolute;
+    top: -25px;
+    left: 360px;
+}
+
+.content-titlebox p {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content-wrap {
+    display: flex;
+}
+
+.content-desc h2 {
+    font-size: 25px;
+    color: #EA5600;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.content-skill {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.content-skill span:nth-of-type(2),
+.content-skill span:nth-of-type(3) {
+    margin-left: 15px;
+}
+
+.content-desc span {
+    font-size: 15px;
+    color: #34323F;
+    font-weight: 700;
+}
+
+.content-text {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.content-text p {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.content-img {
+    width: 410px;
+    /* border: 1px solid black; */
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.content-img img {
+    width: 100%;
+}
+
+
+.github-icon,
+.web-icon {
+    position: absolute;
+    bottom: -20px;
+    background-color: #fff;
+}
+
+.github-icon img,
+.web-icon img {
+    width: 40px;
+}
+
+.github-icon {
+    left: 70px;
+}
+
+.web-icon {
+    left: 140px;
+}
+
+.project-container2 {
+    width: 100%;
+    border: 1px solid red;
+    padding: 150px 0 150px 400px;
+}

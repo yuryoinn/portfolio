@@ -1,22 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/common.css">
+    <title>김현태 포트폴리오</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
-    <div class="main">
-        <h1>KHT <span>Portfolio</span> </h1>
-        <h2 id="open">12.07 Open</h2>
-        <h2 id="d-day">D-Day</h2>
-        <h2 id="remain-time"></h2>
+    <div class="loading-ani"></div>
+    <div class="nav2">
+        <ul>
+            <li><a href="">About.</a></li>
+            <li><a href="">Skill.</a></li>
+            <li><a href="">Porjects.</a></li>
+            <li><a href="">Contact.</a></li>
+        </ul>
     </div>
-    <div class="slogan">
-        <h2>STEP UP to Frontend-developer</h2>
+    <div class="container">
+        <section class="landing">
+            <header>
+                <div class="logo">
+                    <a href="#">
+                        KHT<br>
+                        Portfolio
+                    </a>
+                </div>
+                <ul class="nav1">
+                    <li><a href="#">Contact.</a></li>
+                    <li class="theme" id="ver2">
+                        <a href="#">Ver2.</a>
+                    </li>
+                    <li class="theme" id="ver1">
+                        <a href="#">Ver1.</a>
+                    </li>
+                </ul>
+            </header>
+            <!-- <div class="step-img"></div> -->
+            <div class="landing-txt">
+                <h1 class="landing-txt-ani" id="slide">Step up to front-end developer</h1>
+                <p class="landing-txt-ani2">안녕하세요! 매일 <span>한 발짝씩 나아가는</span> 개발자 김현태 입니다.</p>
+            </div>
+        </section>
+        <section class="sec about">
+            <div class="about-inner">
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="./img/profile.jpg" alt="">
+                    </div>
+                    <div class="about-text">
+                        <h2>STEP</h2>
+                        <p>매일 한 단계 더 성장하려고 노력합니다.</p>
+                        <p>성장의 발자취를 기록합니다.</p>
+                        <div class="introduce-desc">
+                            <p>
+                                안녕하세요! 프론트엔드 개발자를 꿈꾸며 매일 1 Step씩 나아가는 김현태 입니다.<br>
+                                <span>좋은 서비스를 만들기 위해<br></span>
+                                <span>함께 일하고 싶은 동료가 되기 위해<br></span>
+                                <span>더 나은 개발자가 되기 위해<br></span>
+                                항상 배움을 멈추지 않고 여러 개발 분야에 관심을 가지며 노력합니다.<br>
+                                배움과 연구를 기록하여 제 성장의 밑거름이 될 수 있도록하고<br>
+                                이를 바탕으로 한 발짝씩 더 나아가 성장하는 개발자가 되도록 노력합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec skill">
+            <div class="skill-inner">
+                <div class="skill-intro">
+                    <div class="skill-count">
+                        <span>+</span>
+                        <h2>4</h2>
+                    </div>
+                    <div class="skill-intro-text">
+                        <p>
+                            가지 기술을 파고들어<br>
+                            한땀 한땀 연마하였습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-content1">
+                    <div class="skill-1">
+                        <h3>HTML / CSS</h3>
+                        <p>
+                            웹 표준을 지키려 노력합니다.<br>
+                            Keyframe을 활용한 애니메이션을 만들 수 있습니다.<br>
+                            Scss, bootstrap 등의 CSS 라이브러리를 사용할 수 있습니다.<br>
+                            Styled-component 를 활용해본 경험이 있습니다.
+                        </p>
+                    </div>
+                    <div class="skill-2">
+                        <h3>Javascript</h3>
+                        <p>
+                            ECMAScript의 변화를 꾸준히 살피고 학습합니다.<br>
+                            다양한 라이브러리를 활용한 빠른 개발 경험이 있습니다.<br>
+                            디자인 시스템을 기반으로 한 컴포넌트 재사용에 능숙합니다.<br>
+                            Webpack을 사용해 모듈 번들링 및 배포 경험이 있습니다.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-content2">
+                    <div class="skill-3">
+                        <h3>React.js</h3>
+                        <p>
+                            기존에 제작했던 웹사이트들을 SPA로 바꿔보려고 합니다.<br>
+                            이를 통해 상태 변화 관리를 최소화 하여 웹의 성능을 개선합니다.<br>
+                            캡슐화된 컴포넌트를 만들고 이를 조합해 UI를 만들어봅니다.<br>
+                            이를 통해 코드의 재사용성, 효율적인 화면 구성을 경험해 봅니다.<br>
+                        </p>
+                    </div>
+                    <div class="skill-4">
+                        <h3>Next.js</h3>
+                        <p>
+                            pre-loading을 통해 SSR을 가능하게 하여<br> 
+                            검색엔진에 더 잘 노출될 수 있도록 SEO를 향상시켜 봅니다.<br>
+                            또한 첫 로딩 시간을 줄여 전체적인 UX를 개선해봅니다.<br> 
+                            코드 분할 자동화를 통해 성능을 향상시켜 봅니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-content3">
+                    <div class="ts">
+                        <p>Typescript</p>
+                    </div>
+                    <div class="eo">
+                        <p>Emotion</p>
+                    </div>
+                    <div class="wp">
+                        <p>Webpack</p>
+                    </div>
+                    <div class="tj">
+                        <p>three.JS</p>
+                    </div>
+                    <div class="vj">
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="gl">
+                        <p>WebGL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec project">
+            <div class="project-inner">
+                <div class="project-container">
+                    <div class="project-content">
+                        <div class="content-titlebox">
+                            <p>Playstock APP 프로모션 페이지</p>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="content-desc">
+                                <h2>주식 교육 서비스 Playstock 웹 퍼블리싱</h2>
+                                <div class="content-skill">
+                                    <span>HTML / CSS / Javascript</span>
+                                    <span>#스크롤 인터렉션</span>
+                                    <span>#타이핑 인터렉션</span>
+                                </div>
+                                <div class="content-text">
+                                    <p>기획자 디자이너와 협업해 만든 서비스 소개 페이지입니다.</p>
+                                    <p>프로젝트를 기획하고 퍼블리싱을 맡아 진행하였습니다.</p>
+                                    <p>시멘틱 태그 사용에 중점을 두고 마크업 하였습니다.</p>
+                                    <p>컴포넌트 css를 만들어 효율적으로 css를 사용하였습니다. </p>
+                                    <p>스크롤 이벤트를 활용하여 여러 동적 기능을 구현하였습니다.</p>
+                                    <p>slick.js, type.js를 사용해 효율적으로 기능을 구현하였습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <img src="./img/playstock.png" alt="">
+                            </div>
+                        </div>
+                        <div class="github-icon">
+                            <a href="">
+                                <img src="./img/github.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="web-icon">
+                            <a href="">
+                                <img src="./img/earth.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container2">
+                    <div class="project-content">
+                        <div class="content-titlebox">
+                            <p>Tesla 프로모션 웹 페이지</p>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="content-desc">
+                                <h2>Tesla 소개 프로모션 페이지 퍼블리싱</h2>
+                                <div class="content-skill">
+                                    <span>HTML / CSS / Javascript</span>
+                                    <span>#Gsap</span>
+                                    <span>#스크롤 인터렉션</span>
+                                </div>
+                                <div class="content-text">
+                                    <p>Tesla와 전기차가 환경에 주는 영향을 소개하는 페이지입니다.</p>
+                                    <p>컴포넌트 재사용을 통해 효율적으로 css를 사용하였습니다.</p>
+                                    <p>css를 통해 여러 애니메이션을 구현하였습니다.</p>
+                                    <p>Gsap 트리거 기능을 통해 스크롤 인터렉션을 구현하였습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <img src="./img/tesla.png" alt="">
+                            </div>
+                        </div>
+                        <div class="github-icon">
+                            <a href="">
+                                <img src="./img/github.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="web-icon">
+                            <a href="">
+                                <img src="./img/earth.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="project-content">
+                        <div class="content-titlebox">
+                            <p>말꼼 APP 프로모션 페이지</p>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="content-desc">
+                                <h2>문해력 향상 서비스 말꼼 웹 퍼블리싱</h2>
+                                <div class="content-skill">
+                                    <span>HTML / CSS / Javascript</span>
+                                    <span>#fullPage.js</span>
+                                    <span>#SVG 애니메이션</span>
+                                </div>
+                                <div class="content-text">
+                                    <p>기획자 디자이너와 협업해 만든 서비스 소개 페이지입니다.</p>
+                                    <p>프로젝트를 기획하고 퍼블리싱을 맡아 진행하였습니다.</p>
+                                    <p>웹을 이용해 발표를 해야했기에 보는 심사위원을 고려해</p>
+                                    <p>fullPage.js를 사용해 웹 가독성을 높였습니다.</p>
+                                    <p>SVG 코드를 활용해 다양한 애니메이션을 구현하였습니다.</p>
+                                    <p>콜백함수를 통해 시간 차 인터렉션을 구현하였습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <img src="./img/malkkom.png" alt="">
+                            </div>
+                        </div>
+                        <div class="github-icon">
+                            <a href="">
+                                <img src="./img/github.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="web-icon">
+                            <a href="">
+                                <img src="./img/earth.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container2">
+                    <div class="project-content">
+                        <div class="content-titlebox">
+                            <p>T2 브랜드 프로모션 웹 페이지</p>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="content-desc">
+                                <h2>T2 소개 프로모션 페이지 퍼블리싱</h2>
+                                <div class="content-skill">
+                                    <span>HTML / CSS / Javascript</span>
+                                    <span>#스크롤 인터렉션</span>
+                                </div>
+                                <div class="content-text">
+                                    <p>호주 티 브랜드 T2를 소개하는 페이지 입니다.</p>
+                                    <p>시멘틱 태그 사용에 중점을 두고 마크업 하였습니다.</p>
+                                    <p>컴포넌트 css를 만들어 효율적으로 css를 사용하였습니다. </p>
+                                    <p>스크롤 이벤트를 활용하여 여러 동적 기능을 구현하였습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <img src="./img/t2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="github-icon">
+                            <a href="">
+                                <img src="./img/github.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="web-icon">
+                            <a href="">
+                                <img src="./img/earth.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec contact"></section>
     </div>
-    <script src="./javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
