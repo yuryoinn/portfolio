@@ -15,6 +15,19 @@ scenes.forEach((sec ,i) => {
 // ScrollTrigger.create({
 //     snap: 1 / 4 // snap whole page to the closest section!
 //   });
+ 
+AOS.init();
+
+$(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 50) {
+          $('.btn-top').addClass('active')
+        }
+        else {
+          $('.btn-top').removeClass('active')  
+        }
+      })
+})
 
 
 

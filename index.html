@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김현태 포트폴리오</title>
+    <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/landing.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/skill.css">
     <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/casestudy.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <div class="loading-ani"></div>
     <div class="nav2">
         <ul>
-            <li><a href="">About.</a></li>
-            <li><a href="">Skill.</a></li>
-            <li><a href="">Porjects.</a></li>
-            <li><a href="">Contact.</a></li>
+            <li><a href="#feature1">About.</a></li>
+            <li><a href="#feature2">Skill.</a></li>
+            <li><a href="#feature3">Projects.</a></li>
+            <li><a href="#feature4">Casestudy.</a></li>
         </ul>
     </div>
+    <a href="#" class="btn-top"><i class="xi-angle-up-thin"></i></a>
     <div class="container">
         <section class="landing">
             <header>
@@ -32,7 +37,7 @@
                     </a>
                 </div>
                 <ul class="nav1">
-                    <li><a href="#">Contact.</a></li>
+                    <li><a href="#feature5">Contact.</a></li>
                     <li class="theme" id="ver2">
                         <a href="#">Ver2.</a>
                     </li>
@@ -41,20 +46,19 @@
                     </li>
                 </ul>
             </header>
-            <!-- <div class="step-img"></div> -->
             <div class="landing-txt">
                 <h1 class="landing-txt-ani" id="slide">Step up to front-end developer</h1>
                 <p class="landing-txt-ani2">안녕하세요! 매일 <span>한 발짝씩 나아가는</span> 개발자 김현태 입니다.</p>
             </div>
         </section>
-        <section class="sec about">
+        <section class="sec about" id="feature1">
             <div class="about-inner">
                 <div class="about-content">
-                    <div class="about-img">
+                    <div class="about-img" data-aos="fade-right" data-aos-duration="800">
                         <img src="./img/profile.jpg" alt="">
                     </div>
-                    <div class="about-text">
-                        <h2>STEP</h2>
+                    <div class="about-text" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                        <h2>STEP UP</h2>
                         <p>매일 한 단계 더 성장하려고 노력합니다.</p>
                         <p>성장의 발자취를 기록합니다.</p>
                         <div class="introduce-desc">
@@ -72,12 +76,12 @@
                 </div>
             </div>
         </section>
-        <section class="sec skill">
+        <section class="sec skill" id="feature2">
             <div class="skill-inner">
                 <div class="skill-intro">
                     <div class="skill-count">
                         <span>+</span>
-                        <h2>4</h2>
+                        <h2 id="skillNum">0</h2>
                     </div>
                     <div class="skill-intro-text">
                         <p>
@@ -87,7 +91,7 @@
                     </div>
                 </div>
                 <div class="skill-content1">
-                    <div class="skill-1">
+                    <div class="skill-1" data-aos="flip-left" data-aos-duration="600" data-aos-delay="300">
                         <h3>HTML / CSS</h3>
                         <p>
                             웹 표준을 지키려 노력합니다.<br>
@@ -96,7 +100,7 @@
                             Styled-component 를 활용해본 경험이 있습니다.
                         </p>
                     </div>
-                    <div class="skill-2">
+                    <div class="skill-2" data-aos="flip-right" data-aos-duration="600" data-aos-delay="300">
                         <h3>Javascript</h3>
                         <p>
                             ECMAScript의 변화를 꾸준히 살피고 학습합니다.<br>
@@ -107,7 +111,7 @@
                     </div>
                 </div>
                 <div class="skill-content2">
-                    <div class="skill-3">
+                    <div class="skill-3" data-aos="flip-left" data-aos-delay="400" data-aos-duration="600">
                         <h3>React.js</h3>
                         <p>
                             기존에 제작했던 웹사이트들을 SPA로 바꿔보려고 합니다.<br>
@@ -116,7 +120,7 @@
                             이를 통해 코드의 재사용성, 효율적인 화면 구성을 경험해 봅니다.<br>
                         </p>
                     </div>
-                    <div class="skill-4">
+                    <div class="skill-4" data-aos="flip-right" data-aos-delay="400" data-aos-duration="600">
                         <h3>Next.js</h3>
                         <p>
                             pre-loading을 통해 SSR을 가능하게 하여<br> 
@@ -148,10 +152,13 @@
                 </div>
             </div>
         </section>
-        <section class="sec project">
+        <section class="sec project" id="feature3">
             <div class="project-inner">
+                <div class="project-type">
+                    <h2>Publishing</h2>
+                </div>
                 <div class="project-container">
-                    <div class="project-content">
+                    <div class="project-content" data-aos="flip-left" data-aos-duration="800">
                         <div class="content-titlebox">
                             <p>Playstock APP 프로모션 페이지</p>
                         </div>
@@ -177,19 +184,92 @@
                             </div>
                         </div>
                         <div class="github-icon">
-                            <a href="">
-                                <img src="./img/github.svg" alt="">
+                            <a href="https://github.com/yuryoinn/PlayStock-Project_studio" target="_blank">
+                                <i class="fa fa-github"></i>
                             </a>
                         </div>
                         <div class="web-icon">
-                            <a href="">
-                                <img src="./img/earth.svg" alt="">
+                            <a href="https://yuryoinn.github.io/PlayStock-Project_studio/" target="_blank">
+                                <i class="fa fa-chrome"></i>
                             </a>
+                        </div>
+                        <button class="show-modal">프로젝트 상세보기</button>
+                    </div>
+                    <div class="modal-box" id="modal-1">
+                        <div class="modal-title">
+                            Playstock 작업 과정
+                        </div>
+                        <div class="modal-content">
+                            <input type="radio" name="indicator" id="planning" checked>
+                            <input type="radio" name="indicator" id="design">
+                            <input type="radio" name="indicator" id="publishing">
+                            <div class="list">
+                                <label for="planning" class="planning">
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span class="topic">Planning</span>
+                                </label>
+                                <label for="design" class="design">
+                                    <i class="fa fa-paint-brush"></i>
+                                    <span class="topic">Design</span>
+                                </label>
+                                <label for="publishing" class="publishing">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <span class="topic">Coding</span>
+                                </label>
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content-wrap">
+                                <div class="planning-content hide">
+                                    <div class="p-title">주식 이해를 돕는 앱 서비스</div>   
+                                    <div class="mal-img">
+                                        <img src="./img/playstock-p-1.png" alt="">
+                                        <img src="./img/playstock-p-2.png" alt="">
+                                        <img src="./img/playstock-p-3.png" alt="">
+                                    </div>
+                                    <div class="mal-desc">
+                                        <p>
+                                            최근 MZ세대의 재테크 관심이 높아지는 추세에 따라<br>
+                                            주식에 대한 개념공부와 모의투자까지 경험 할 수 있는 앱 서비스
+                                        </p>
+                                    </div>                  
+                                </div>
+                                <div class="design-content hide">
+                                    <div class="p-title">디자인 과정을 소개합니다.</div>
+                                    <div class="mal-img">
+                                        <img src="./img/playstock-d-1.png" alt="">
+                                        <img src="./img/playstock-d-2.png" alt="">
+                                        <img src="./img/playstock-d-3.png" alt="">
+                                    </div>
+                                    <div class="mal-desc">
+                                        <p>
+                                            보다 쉽고 가벼운 명확하고 직관적인 디자인과<br>
+                                            게임 컨셉의 디자인과 게임 콘솔을 활용한 로고 NPC 캐릭터를 활용합니다.
+                                        </p>
+                                    </div>  
+                                </div>
+                                <div class="publishing-content hide">
+                                    <div class="p-title">코딩 과정을 소개합니다.</div>
+                                    <div class="mal-img">
+                                        <img src="./img/playstock-c-1.png" alt="">
+                                        <img src="./img/playstock-c-2.png" alt="">
+                                        <img src="./img/playstock-c-3.png" alt="">
+                                    </div>
+                                    <div class="mal-desc">
+                                        <p>
+                                            스크롤 인터렉션 위주로 여러 동적 UI를 구성하였습니다.<br>
+                                            슬라이더, 타이핑 등 다양한 라이브러리를 사용하였습니다.
+                                        </p>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn">
+                            <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
                 </div>
                 <div class="project-container2">
-                    <div class="project-content">
+                    <div class="project-content" data-aos="flip-right" data-aos-duration="800">
                         <div class="content-titlebox">
                             <p>Tesla 프로모션 웹 페이지</p>
                         </div>
@@ -213,19 +293,62 @@
                             </div>
                         </div>
                         <div class="github-icon">
-                            <a href="">
-                                <img src="./img/github.svg" alt="">
+                            <a href="https://github.com/yuryoinn/Tesla-Web-page" target="_blank">
+                                <i class="fa fa-github"></i>
                             </a>
                         </div>
                         <div class="web-icon">
-                            <a href="">
-                                <img src="./img/earth.svg" alt="">
+                            <a href="https://yuryoinn.github.io/Tesla-Web-page/" target="_blank">
+                                <i class="fa fa-chrome"></i>
                             </a>
+                        </div>
+                        <button class="show-modal2">프로젝트 상세보기</button>
+                    </div>
+                    <div class="modal-box" id="modal-2">
+                        <div class="modal-title">
+                            Tesla Page 작업 과정
+                        </div>
+                        <div class="modal-content">
+                            <input type="radio" name="indicator" id="planning2" checked>
+                            <input type="radio" name="indicator" id="design2">
+                            <input type="radio" name="indicator" id="publishing2">
+                            <div class="list">
+                                <label for="planning2" class="planning">
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span class="topic">Planning</span>
+                                </label>
+                                <label for="design2" class="design">
+                                    <i class="fa fa-paint-brush"></i>
+                                    <span class="topic">Design</span>
+                                </label>
+                                <label for="publishing2" class="publishing">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <span class="topic">Coding</span>
+                                </label>
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content-wrap">
+                                <div class="planning-content hide">
+                                    <div class="p-title">기획 과정을 소개합니다.</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo necessitatibus accusamus autem recusandae at maxime ipsum! Iusto sapiente praesentium rem expedita, impedit ipsam, vitae natus repudiandae totam, quasi earum!</p>
+                                </div>
+                                <div class="design-content hide">
+                                    <div class="p-title">디자인 과정을 소개합니다.</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo necessitatibus accusamus autem recusandae at maxime ipsum! Iusto sapiente praesentium rem expedita, impedit ipsam, vitae natus repudiandae totam, quasi earum!</p>
+                                </div>
+                                <div class="publishing-content hide">
+                                    <div class="p-title">코딩 과정을 소개합니다.</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo necessitatibus accusamus autem recusandae at maxime ipsum! Iusto sapiente praesentium rem expedita, impedit ipsam, vitae natus repudiandae totam, quasi earum!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn2">
+                            <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
                 </div>
                 <div class="project-container">
-                    <div class="project-content">
+                    <div class="project-content" data-aos="flip-left" data-aos-duration="800">
                         <div class="content-titlebox">
                             <p>말꼼 APP 프로모션 페이지</p>
                         </div>
@@ -251,19 +374,92 @@
                             </div>
                         </div>
                         <div class="github-icon">
-                            <a href="">
-                                <img src="./img/github.svg" alt="">
+                            <a href="https://github.com/malkkom/malkkom" target="_blank">
+                                <i class="fa fa-github"></i>
                             </a>
                         </div>
                         <div class="web-icon">
-                            <a href="">
-                                <img src="./img/earth.svg" alt="">
+                            <a href="https://malkkom.github.io/malkkom/" target="_blank">
+                                <i class="fa fa-chrome"></i>
                             </a>
+                        </div>
+                        <button class="show-modal3">프로젝트 상세보기</button>
+                    </div>
+                    <div class="modal-box" id="modal-3">
+                        <div class="modal-title">
+                            말꼼 Page 작업 과정
+                        </div>
+                        <div class="modal-content">
+                            <input type="radio" name="indicator" id="planning3" checked>
+                            <input type="radio" name="indicator" id="design3">
+                            <input type="radio" name="indicator" id="publishing3">
+                            <div class="list">
+                                <label for="planning3" class="planning">
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span class="topic">Planning</span>
+                                </label>
+                                <label for="design3" class="design">
+                                    <i class="fa fa-paint-brush"></i>
+                                    <span class="topic">Design</span>
+                                </label>
+                                <label for="publishing3" class="publishing">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <span class="topic">Coding</span>
+                                </label>
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content-wrap">
+                                <div class="planning-content hide">
+                                    <div class="p-title">"말눈치 상승을 위한 앱 서비스"</div>
+                                    <div class="mal-img">
+                                        <img src="./img/malkkom-plan1.png" alt="">
+                                        <img src="./img/malkkom-plan2.png" alt="">
+                                        <img src="./img/malkkom-plan3.png" alt="">
+                                    </div>
+                                    <div class="mal-desc">
+                                        <p>
+                                            최근 디지털 세대의 문해력이 떨어지는 문제를 해결하기 위해<br>
+                                            퀴즈, 포스팅을 통해 문해력을 길러주는 앱 서비스를 기획하였습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="design-content hide">
+                                    <div class="p-title">무거운 주제를 재미있게 풀어내는 디자인</div>
+                                    <div class="mal-img">
+                                        <img src="./img/malkkom-design-1.png" alt="">
+                                        <img src="./img/malkkom-design-2.png" alt="">
+                                        <img src="./img/malkkom-design-3.png" alt="">
+                                    </div>
+                                    <div class="mal-desc">
+                                        <p>
+                                            캐릭터 일러스트를 적극 활용하여 녹여내 유쾌하고 재밌게 풀어냈습니다.<br>
+                                            영한 이미지를 주기 위해 라운드 형태를 적극적으로 활용하였습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="publishing-content hide">
+                                    <div class="p-title">사용자를 고려한 fullPage 사용</div>
+                                    <div class="mal-img">
+                                        <img src="./img/malkkom-code-1.png" alt="">
+                                        <img src="./img/malkkom-code-2.png" alt="">
+                                        <img src="./img/malkkom-code-3.png" alt="">
+                                    </div>
+                                    <div class="mal-desc">
+                                        <p>
+                                            사용자를 고려해 발표 듣는 사람이 보기 편하도록 fullpage.js를 사용했습니다.<br>
+                                            svg 애니메이션을 활용해 더 동적인 움직임을 구현하였습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn3">
+                            <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
                 </div>
-                <div class="project-container2">
-                    <div class="project-content">
+                <div class="project-container2" id="fake">
+                    <div class="project-content" data-aos="flip-right" data-aos-duration="800">
                         <div class="content-titlebox">
                             <p>T2 브랜드 프로모션 웹 페이지</p>
                         </div>
@@ -286,25 +482,268 @@
                             </div>
                         </div>
                         <div class="github-icon">
-                            <a href="">
-                                <img src="./img/github.svg" alt="">
+                            <a href="https://github.com/yuryoinn/T2-Persona-Web-Page" target="_blank">
+                                <i class="fa fa-github"></i>
                             </a>
                         </div>
                         <div class="web-icon">
-                            <a href="">
-                                <img src="./img/earth.svg" alt="">
+                            <a href="https://yuryoinn.github.io/T2-Persona-Web-Page/" target="_blank">
+                                <i class="fa fa-chrome"></i>
                             </a>
+                        </div>
+                        <button class="show-modal4">프로젝트 상세보기</button>
+                    </div>
+                    <div class="modal-box" id="modal-4">
+                        <div class="modal-title">
+                            T2 Page 작업 과정
+                        </div>
+                        <div class="modal-content">
+                            <input type="radio" name="indicator" id="planning4" checked>
+                            <input type="radio" name="indicator" id="design4">
+                            <input type="radio" name="indicator" id="publishing4">
+                            <div class="list">
+                                <label for="planning4" class="planning">
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span class="topic">Planning</span>
+                                </label>
+                                <label for="design4" class="design">
+                                    <i class="fa fa-paint-brush"></i>
+                                    <span class="topic">Design</span>
+                                </label>
+                                <label for="publishing4" class="publishing">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <span class="topic">Coding</span>
+                                </label>
+                                <div class="indicator"></div>
+                            </div>
+                            <div class="content-wrap">
+                                <div class="planning-content hide">
+                                    <div class="p-title">기획 과정을 소개합니다.</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo necessitatibus accusamus autem recusandae at maxime ipsum! Iusto sapiente praesentium rem expedita, impedit ipsam, vitae natus repudiandae totam, quasi earum!</p>
+                                </div>
+                                <div class="design-content hide">
+                                    <div class="p-title">디자인 과정을 소개합니다.</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo necessitatibus accusamus autem recusandae at maxime ipsum! Iusto sapiente praesentium rem expedita, impedit ipsam, vitae natus repudiandae totam, quasi earum!</p>
+                                </div>
+                                <div class="publishing-content hide">
+                                    <div class="p-title">코딩 과정을 소개합니다.</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo necessitatibus accusamus autem recusandae at maxime ipsum! Iusto sapiente praesentium rem expedita, impedit ipsam, vitae natus repudiandae totam, quasi earum!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-btn4">
+                            <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sec contact"></section>
+        <section class="sec casestudy" id="feature4">
+            <div class="cs-type">
+                <h2>Javascript Case Study</h2>
+            </div>
+            <div class="slide-container swiper" data-aos="zoom-in" data-aos-duration="800">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./img/casestudy-1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">To Do List</h2>
+                                <p class="description">
+                                    할 일 데이터를 CRUD 방식으로 처리하였습니다.<br>
+                                    기본 상태일때는 수정 및 삭제 버튼이 노출되고, 수정상태일때는 확인 및 취소 버튼이 활성화되도록 구현하였습니다.<br>
+                                    Json-server를 활용해서 로컬에 REST API를 구축하고 연동하였습니다.
+                                </p>
+                                <button class="button">
+                                    <a href="https://github.com/yuryoinn/todo_list" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./img/casestudy-2.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Infinite Scroll</h2>
+                                <p class="description">
+                                    컨텐츠의 끝이 브라우저 끝에 닿으면 api가 호출되어<br>
+                                    새로운 데이터를 불러오도록 구현하였습니다.
+                                    removeEventListener()로 계속 발생하는 이벤트를
+                                    명시적으로 해제하여 메모리 누수를 막았습니다.
+                                    todolist와 달리 외부 api를 연동하였습니다.
+                                </p>
+                                <button class="button">
+                                    <a href="https://github.com/yuryoinn/infinite_scroll" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="./img/casestudy-3.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">3D Carousel</h2>
+                                <p class="description">
+                                    버튼은 클릭 시 rotateY()값이 60도씩 돌아가<br>
+                                    화면이 움직이는 클릭이벤트를 구현하였습니다.<br>
+                                    각 캐러셀에 index를 부여한 뒤 총 개수로 나누고 360도를 곱해 앵글의 위치값을 받아왔습니다.<br>
+                                    버튼 클릭시 index가 변경되며 이벤트가 발생합니다.
+                                </p>
+                                <button class="button">
+                                    <a href="https://github.com/yuryoinn/3d_carousel" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./img/casestudy-4.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Pop Up Modal</h2>
+                                <p class="description">
+                                    classList.toggle()를 활용하여 버튼 클릭 시<br>
+                                    모달 창을 열고 닫는 이벤트를 구현하였습니다.<br>
+                                    버튼이 아닌 모달 바깥 배경에도 클릭 이벤트를 적용해<br>
+                                    바깥 배경을 눌러도 팝업이 닫히도록 구현하였습니다.<br>
+                                    팝업을 띄울 시 바깥 스크롤 되지 않게 구현하였습니다.
+                                </p>
+                                <button class="button">
+                                    <a href="https://github.com/yuryoinn/modal_popup" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./img/casestudy-5.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Stop Watch</h2>
+                                <p class="description">
+                                    JS의 타이머 이벤트는 정확한 간격으로 발생하지 않기에<br>
+                                    setInterval() 메서드를 사용해 경과된 시간을 구하고<br>
+                                    Date.now()를 사용해 현재 시간을 가져와 현재 시간을 경과된 시간과 비교해
+                                    실제 경과 시간을 계산하는 방식으로 구현하였습니다.
+                                </p>
+                                <button class="button">
+                                    <a href="https://github.com/yuryoinn/stop_watch" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="./img/casestudy-6.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Calculator</h2>
+                                <p class="description">
+                                    사칙연산, 소수점, 클리어, 초기화 기능을 구현하였습니다.<br>
+                                    숫자 값을 저장하는 setNumber() 함수, 값을 초기화하는 reset() 함수
+                                    연산을 해주는 setOperation() 함수, <br>
+                                    연산 후 값을 보여주는 finish() 함수
+                                    를 모든 계산기 패드에 클릭 이벤트로 구현해주었습니다.
+                                </p>
+                                <button class="button">
+                                    <a href="https://github.com/yuryoinn/calculator" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="sec contact" id="feature5">
+            <div class="contact-inner">
+                <div class="sec-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-img">
+                        <img src="./img/my-emoji.png" alt="">
+                    </div>
+                    <div class="contact-sns">
+                        <ul>
+                            <li>
+                                <div class="icon-1">
+                                    <i class="fa fa-google"></i>
+                                </div>
+                                <a href="mailto:yuryoinn88@gmail.com">
+                                    yuryoinn88@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <div class="icon-2">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <a href="tel:01071019973" class="mo">
+                                    010-7101-9973
+                                </a>
+                            </li>
+                            <li>
+                                <div class="icon-3">
+                                    <i class="fa fa-github"></i>
+                                </div>
+                                <a href="https://github.com/yuryoinn" class="gh" target="_blank">
+                                    Github
+                                </a>
+                            </li>
+                            <li>
+                                <div class="icon-4">
+                                    <img src="./img/notion.svg" alt="">
+                                </div>
+                                <a href="" class="no">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-desc">
+                    <p>
+                        더 좋은 개발자가 되기 위해 매일 한 발짝씩 나아가고 있습니다.<br>
+                        그러기 위해 다양한 대외활동과 협업 경험을 쌓았고<br>
+                        매일 매일 스스로 발전 할 수 있는 기회를 만들어 나가고 있습니다.<br>
+                        이런 저의 성장 가능성을 믿고 이끌어줄 회사를 찾고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/counter.js"></script>
 </body>
 </html>

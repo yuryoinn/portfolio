@@ -25,7 +25,7 @@ tl.fromTo(".landing-txt-ani", {
     duration: 2,
     y: "0%",
     opacity: 1,
-    ease: "power1.out"
+    ease: "power1.out",
 });
 
 tl.to(".loading-ani", {
@@ -43,15 +43,6 @@ tl.fromTo(".landing-txt-ani2", {
     y: "0%",
     opacity: 1,
 },"-=1");
-
-tl.fromTo(".step-img", {
-    y: "100%"
-},{
-    duration: 1,
-    y: "0%",
-    opacity: 1,
-    ease: "power1.in"
-},"-=3");
 
 tl.fromTo(".logo", {
     y: "100%",
